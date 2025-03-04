@@ -27,7 +27,7 @@ export default function PreviewPage() {
             <div className="max-w-7xl mx-auto px-6 md:px-12 xl:px-6">
               <div className="relative pt-36 ml-auto">
                 <div className="lg:w-2/3 text-justify mx-auto">
-                  <h1 className="text-white dark:text-white font-bold text-5xl md:text-6xl xl:text-7xl">JÑĀNĀGNI<span className="text-primary text-[#EACD69]"> 2023.</span></h1>
+                  <h1 className="text-white dark:text-white font-bold text-5xl md:text-6xl xl:text-7xl">JÑĀNĀGNI<span className="text-primary text-[#EACD69]"> 2025.</span></h1>
                   <h4 className="mt-8 text-white dark:text-gray-300">
                   It is a 3-day Techno-Cultural event which attracts participants from various colleges across the region. The fest features a wide range of events, including technical competitions, cultural performances, workshops, seminars, and sports activities. The technical competitions include coding challenges, hackathons, robotics competitions, and gaming events. There are also cultural events such as music and dance performances, and talent shows. JÑĀNĀGNI is known for its lively and energetic atmosphere, with participants from different colleges showcasing their talents and engaging in friendly competition. The fest provides a platform for students to showcase their skills and creativity and helps to foster a sense of community and collaboration among participants.                  </h4>
                   <div className='flex justify-between mt-10'>

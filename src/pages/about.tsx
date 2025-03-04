@@ -60,7 +60,7 @@ const About = () => {
 
 
                                 <p className="text-body-color mb-8 text-justify text-base">
-                                Jnanagni 2023, the annual techno-cultural fest of Gurukul Kangri (Deemed to be) University, Haridwar, continues to be a testament to the institution's rich history, spanning over a century. This national-level event is a grand celebration of innovation and creativity, featuring a plethora of competitive competitions and entertaining events that ignite the enthusiasm of participants and spectators alike. With its deep-rooted tradition and modern approach, Jnanagni 2023 promises to be a vibrant and unforgettable experience, uniting talent and passion in the picturesque city of Haridwar.</p>
+                                Jnanagni 2025, the annual techno-cultural fest of Gurukul Kangri (Deemed to be) University, Haridwar, continues to be a testament to the institution's rich history, spanning over a century. This national-level event is a grand celebration of innovation and creativity, featuring a plethora of competitive competitions and entertaining events that ignite the enthusiasm of participants and spectators alike. With its deep-rooted tradition and modern approach, Jnanagni 2025 promises to be a vibrant and unforgettable experience, uniting talent and passion in the picturesque city of Haridwar.</p>
 
                             </div>
                         </div>
