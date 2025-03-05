@@ -5,8 +5,6 @@ import Image from 'next/image';
 
 import Container from '@/components/Layout';
 import Gallery from './gallery';
-import Pronities from './pronities';
-import airbnb from '../images/airbnb.svg';
 import Events from './events';
 import { useRouter } from 'next/router';
 

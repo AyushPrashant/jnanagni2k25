@@ -20,8 +20,7 @@ import image19 from './19.jpeg';
 import image20 from './20.jpeg';
 import image21 from './21.jpeg';
 import image22 from './22.jpeg';
-import qr1 from './qr1.jpeg';
-import qr2 from './qr2.jpeg';
+
 
 
 
@@ -48,5 +47,4 @@ export {
     image20,
     image21,
     image22,
-    qr1, qr2
 }

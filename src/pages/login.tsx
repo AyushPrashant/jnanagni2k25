@@ -268,7 +268,6 @@
 import { useState } from 'react';
 import Image from "next/image";
 import Container from '@/components/Layout';
-import { qr1, qr2 } from '@/images/poster';
 
 export default function Register() {
     const [selectedType, setSelectedType] = useState<'gkv' | 'outside'>('gkv');
