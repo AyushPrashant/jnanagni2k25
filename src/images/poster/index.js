@@ -10,15 +10,18 @@ import image9 from './9.jpeg';
 import image10 from './10.jpeg';
 import image11 from './11.jpeg';
 import image12 from './12.jpg';
-// import image13 from './13.jpg';
-// import image14 from './14.jpg';
-// import image15 from './15.jpg';
-// import image16 from './16.jpg';
-// import image17 from './17.jpg';
-// import image18 from './18.jpg';
-// import image19 from './19.jpg';
-// import image20 from './20.jpg';
-// import image21 from './21.jpg';
+import image13 from './13.jpeg';
+import image14 from './14.jpeg';
+import image15 from './15.jpeg';
+import image16 from './16.jpeg';
+import image17 from './17.jpeg';
+import image18 from './18.jpeg';
+import image19 from './19.jpeg';
+import image20 from './20.jpeg';
+import image21 from './21.jpeg';
+import image22 from './22.jpeg';
+import qr1 from './qr1.jpeg';
+import qr2 from './qr2.jpeg';
 
 
 
@@ -35,13 +38,15 @@ export {
     image10,
     image11,
     image12,
-    // image13,
-    // image14,
-    // image15,
-    // image16,
-    // image17,
-    // image18,
-    // image19,
-    // image20,
-    // image21
+    image13,
+    image14,
+    image15,
+    image16,
+    image17,
+    image18,
+    image19,
+    image20,
+    image21,
+    image22,
+    qr1, qr2
 }

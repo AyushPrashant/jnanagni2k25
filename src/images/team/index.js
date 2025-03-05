@@ -12,6 +12,17 @@ import ujjwal from './ujjwal.jpeg';
 import supriya from './supriya.jpeg';
 import gaurav from './gaurav.jpeg';
 import ayush from './ayush.jpeg';
+import abhishek from './abhishek.jpeg';
+import aman from './aman.jpeg';
+import anand from './anand.jpeg';
+import bhola from './bhola.jpeg';
+import mohit from './mohit.jpeg';
+import rc from './rc.jpeg';
+import rk from './rk.jpeg';
+import subhanshu from './subhanshu.jpeg';
 
 import profile from './download.png'
-export { profile, romit, rahul, archit, vivek, sourabh, sudhanshu, bikash, ashwani, ujjwal, supriya, gaurav, ayush }
+export {
+    profile, romit, rahul, archit, vivek, sourabh, sudhanshu, bikash, ashwani, ujjwal, supriya, gaurav, ayush,
+    abhishek, aman, anand, bhola, mohit, rc, rk, subhanshu
+}

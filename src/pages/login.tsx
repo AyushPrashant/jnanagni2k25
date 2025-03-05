@@ -268,6 +268,7 @@
 import { useState } from 'react';
 import Image from "next/image";
 import Container from '@/components/Layout';
+import { qr1, qr2 } from '@/images/poster';
 
 export default function Register() {
     const [selectedType, setSelectedType] = useState<'gkv' | 'outside'>('gkv');
@@ -286,26 +287,29 @@ export default function Register() {
                     </button>
                     <button className={`px-6 py-2 text-white rounded-md ${selectedType === 'outside' ? 'bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800' : ' bg-gradient-to-r from-teal-400 via-teal-500 to-teal-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-teal-300 dark:focus:ring-teal-800'}`}
                         onClick={() => handleSelect('outside')}>
-                        Outside Student
+                        Other Student
                     </button>
                 </div>
                 <div className="mt-6">
                     <p className="text-lg font-semibold text-white">
-                        Scan the QR Code for {selectedType === 'gkv' ? 'GKV Students' : 'Outside Students'}
+                        Scan the QR Code for {selectedType === 'gkv' ? 'GKV Students' : 'Other Students'}
                     </p>
                     <div className="flex justify-center mt-6">
                         {/* <Image src={ selectedType === "gkv"
-                                    ? "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNya06yTLGfcQ67ddn9UsdRcXmlfKxe--AkQ&s"
-                                    : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGAaUCiVWViJFI0MRjRLIdtaUTC26cRWdGsw&s" }
+                                    ? qr1
+                                    : qr2 }
                             alt="QR Code for Registration"
-                            width={200}
-                            height={200}
+                            // width={200}
+                            // height={200}
                             className="border rounded-lg bg-red-800"
                             priority /> */}
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/QR_code_for_mobile_English_Wikipedia.svg" alt="" />
+                        <img src={selectedType === "gkv"
+                            ? 'qr1.jpeg'
+                            : 'qr2.jpeg'} alt=""
+                            style={{ width: '300px', height: '300px' }} />
                     </div>
                     <div className="mt-6">
-                        <a href={selectedType === 'gkv' ? 'https://gkv-register.com' : 'https://outside-register.com'} target="_blank"
+                        <a href={selectedType === 'gkv' ? 'https://docs.google.com/forms/d/e/1FAIpQLSdYCe8jcuTvcD6VMgCrWiQJtbzGUO6NDmrXk_pv36vVaBq7nw/viewform?usp=dialog' : 'https://forms.gle/BoFsBKPkaLDWQWg19'} target="_blank"
                             rel="noopener noreferrer"
                             className="px-8 py-2  text-white rounded-md  bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800">
                             Register Now

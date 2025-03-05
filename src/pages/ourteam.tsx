@@ -1,5 +1,7 @@
 import React from 'react'
-import { profile, romit, rahul, archit, vivek, sourabh, sudhanshu, bikash, ashwani, ujjwal, supriya, ayush, gaurav } from '../images/team'
+import { profile, romit, rahul, archit, vivek, sourabh, sudhanshu, bikash, ashwani, ujjwal, supriya, ayush, gaurav,
+    abhishek, aman, anand, bhola, mohit, rc, rk, subhanshu
+ } from '../images/team'
 import Image, { StaticImageData } from 'next/image'
 import { twitter, linkedin, github } from '../images/icons';
 import NavMenu from '@/components/NavMenu';
@@ -9,7 +11,7 @@ import { useState } from 'react';
 const coreTeam = [
     {
         name: 'Mohit Kr. Sandilya',
-        image: profile,
+        image: mohit,
         year: "ECE, 3rd Year",
     },
     {
@@ -24,7 +26,7 @@ const coreTeam = [
     },
     {
         name: 'Abhishek Kr.',
-        image: profile,
+        image: abhishek,
         year: "ME, 3rd Year",
     },
 ]
@@ -42,12 +44,17 @@ const eventTeam = [
     },
     {
         name: 'Shubhanshu',
-        image: profile,
+        image: subhanshu,
+        year: "CSE, 3rd Year",
+    },
+    {
+        name: 'Rohit Kumar',
+        image: rk,
         year: "CSE, 3rd Year",
     },
     {
         name: 'Anand kumar',
-        image: profile,
+        image: anand,
         year: "CSE, 3rd Year",
     },
     {
@@ -82,7 +89,7 @@ const eventTeam = [
     },
     {
         name: 'Rohit Choudhary',
-        image: profile,
+        image: rc,
         year: "ECE, 3rd Year",
     },
     {
@@ -97,12 +104,12 @@ const eventTeam = [
     },
     {
         name: 'Aman Soni',
-        image: profile,
+        image: aman,
         year: "ME, 1st Year",
     },
     {
         name: 'Bhola Kr.',
-        image: profile,
+        image: bhola,
         year: "CSE, 3rd Year",
     },
     {

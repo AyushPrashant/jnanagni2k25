@@ -18,7 +18,7 @@ interface EventType {
     aboutEvent: string;
     eventDetail: string[];
     coordinator: string[];
-    rulebook: string;
+    rulebook: string | null;
     isEventOpen: boolean;
     // schedule: {
     //     day: string;
@@ -39,10 +39,10 @@ const EventDetails = () => {
 
     useEffect(() => {
         // Check if the query contains 'data' and parse it
-          const event = newEvents.find(event=> event.id==id); // Parse the stringified object
-          setEventData(event); // Set the parsed event data
-        
-      },);
+        const event = newEvents.find(event => event.id == id); // Parse the stringified object
+        setEventData(event); // Set the parsed event data
+
+    },);
 
     useEffect(() => {
         // Check if the user is already registered when the component mounts
@@ -107,11 +107,11 @@ const EventDetails = () => {
     }
 
     // Handler for viewing the rulebook
-    // const handleViewRuleBook = () => {
-    //     if (event?.rulebook?.startsWith('http://') || event?.rulebook?.startsWith('https://')) {
-    //         window.open(event.rulebook, '_blank');
-    //     }
-    // };
+    const handleViewRuleBook = () => {
+        if (event?.rulebook?.startsWith('http://') || event?.rulebook?.startsWith('https://')) {
+            window.open(eventData.rulebook, '_blank');
+        }
+    };
 
     // Handler for registering the event
     const handleRegisterEvent = async () => {
@@ -175,10 +175,10 @@ const EventDetails = () => {
                 <article className='col-span-9 mt-12 justify-center flex'>
                     <div className=''>
                         <div className='text-center'>
-                            <h1 className="text-white font-bold text-4xl md:text-5xl xl:text-6xl">{eventData===null?"null received": eventData.name}<span className="text-primary text-[#EACD69]">.</span></h1>
+                            <h1 className="text-white font-bold text-4xl md:text-5xl xl:text-6xl">{eventData === null ? "null received" : eventData.name}<span className="text-primary text-[#EACD69]">.</span></h1>
                             <div className='text-center'>
                                 <div className='flex items-center justify-center mb-2 space-x-2 text-lg'>
-                                    <p className='m-0 text-lg md:text-xl'>{eventData?.alias??''}</p>
+                                    <p className='m-0 text-lg md:text-xl'>{eventData?.alias ?? ''}</p>
                                     <p className='m-0'>•</p>
                                 </div>
                             </div>
@@ -243,13 +243,13 @@ const EventDetails = () => {
                         </div>
                         <div className="md:p-10">
                             {/* Add buttons for viewing the rulebook and registering/unregistering for the event */}
-                            {/* <button
+                            {eventData.rulebook !== null && (<button
                                 type="button"
                                 onClick={handleViewRuleBook}
                                 className="text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-base px-6 py-3.5 text-center dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800"
                             >
                                 Rule Book
-                            </button> */}
+                            </button>)}
                             {event?.isEventOpen && (
                                 <button
                                     type="button"

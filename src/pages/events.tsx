@@ -5,7 +5,10 @@ import Link from 'next/link';
 import NavMenu from '@/components/NavMenu';
 import { collection, getDocs, query } from 'firebase/firestore';
 import { db } from '../../firebase';
-import { image1, image2, image3, image4, image5, image6, image7, image8, image9, image10, image11, image12 } from '../images/poster';
+import {
+  image1, image2, image3, image4, image5, image6, image7, image8, image9, image10, image11, image12,
+  image13, image14, image15, image16, image17, image18, image19, image20, image21, image22
+} from '../images/poster'
 
 
 // {
@@ -137,6 +140,107 @@ const newEvents = [
     eventDetail: ["This event will have two round and the result will be announced on the last day"],
     rulebook: null,
     coordinator: ["Rohit Kumar (7348309041)", 'Anand Raj (9693887066)', 'Bhola Kumar (9693887066)']
+  },
+  {
+    id: "orientation",
+    name: "Orientation Program",
+    alias: "Orientation Program on My Yuva Bharat Portal",
+    image: image20,
+    aboutEvent: "Welcome to the orientation program, where we will explore 'My Yuva Bharat Portal', and an expert lecture on Nasha Mukt Bharat Abhiyan. Do participate in this event an contribute for a healthy society.",
+    eventDetail: ["Orientation Program to be conducted on 7th or 8th March"],
+    rulebook: null,
+    coordinator: ["Vansh Chauhan (7452883714)", "Dhruv Sharma"]
+  },
+  {
+    id: "yuva-samvad",
+    name: "Yuva Samvad",
+    alias: "Debate Competition",
+    image: image21,
+    aboutEvent: `"Yuva Samvad" is an intellectually stimulating debate competition aimed at fostering critical thinking, communication skills, and social awareness among the youth. This event provides a dynamic platform for young minds to engage in healthy, thought-provoking discussions on a variety of contemporary issues, ranging from politics and economics to technology and social justice.`,
+    eventDetail: ["This event will have multiple rounds and the result will be announced on the last day"],
+    rulebook: null,
+    coordinator: ["Movva Rakesh", 'Ayush Yadav (9580116633)']
+  },
+  {
+    id: "quiz",
+    name: "Bharat Ko Jaano",
+    alias: "Quiz Competition",
+    image: image22,
+    aboutEvent: `"Bharat ko Jano" is an exciting and informative quiz competition designed to test and expand participants' knowledge about India’s rich culture, history, geography, and modern developments. This quiz invites individuals of all ages to explore the vast and diverse facets of India, from its ancient civilization to its present-day achievements, fostering a deeper connection with the nation’s heritage.
+The competition provides a fun yet challenging platform for participants to showcase their understanding of India's traditions, prominent personalities, important events, and contemporary issues. By taking part, participants not only strengthen their knowledge but also develop a sense of pride in India's incredible legacy and future potential.`,
+    eventDetail: ["This event will have only one round and the result will be announced on  same day"],
+    rulebook: null,
+    coordinator: ["Vishwas (6395436643)", 'Vinod Singh (8865825122)']
+  },
+  {
+    id: "tt",
+    name: "Smash and Spin",
+    alias: "Table Tennis Competition",
+    image: image13,
+    aboutEvent: `Get ready to serve up some serious competition at the "Smash & Spin" Table Tennis Championship! This exciting event brings together players of all skill levels to showcase their agility, precision, and strategic gameplay on the table. Whether you’re a seasoned pro or a newcomer eager to test your skills, this competition promises intense action, thrilling rallies, and moments of pure athleticism.`,
+    eventDetail: ["This event will have all rounds as eliminator round and the result will be announced on  same day"],
+    rulebook: null,
+    coordinator: ["Neelesh Gupta (9131558992)"]
+  },
+  {
+    id: "carrom",
+    name: "Carrom Clash",
+    alias: "Carrom Tournament",
+    image: image15,
+    aboutEvent: `Step into the world of precision, strategy, and skill with the Carrom Clash Tournament! This exciting event brings together carrom enthusiasts to test their finesse, concentration, and tactics on the iconic carrom board. Whether you're a casual player or a seasoned expert, this tournament is the perfect platform to showcase your skills and compete for the ultimate title.`,
+    eventDetail: ["This event will have all rounds as eliminator round and the result will be announced on  same day"],
+    rulebook: null,
+    coordinator: ["Sourav Dehariya (9131132477)", "Ayush Kumar"]
+  },
+  {
+    id: "squid-game",
+    name: "Squid Game",
+    alias: "Treasure Hunt",
+    image: image19,
+    aboutEvent: `Get ready for an adventure like never before! The Treasure Hunt Competition at JÑĀNĀGNI is a thrilling challenge that combines problem-solving, teamwork, and the excitement of a treasure search. Teams will race against the clock, solving puzzles, deciphering clues, and navigating through the campus to uncover hidden treasures.`,
+    eventDetail: ["This event will have only multiple rounds and the result will be announced on  same day"],
+    rulebook: null,
+    coordinator: ["Sourav Dehariya (9131132477)", "Rohit Choudhary (7849899499)", 'Ashwani Kumar Gautam (9131132477)']
+  },
+  {
+    id: "badminton",
+    name: "Shuttle Smash",
+    alias: "Badminton Tournament",
+    image: image16,
+    aboutEvent: `Get your rackets ready and your shuttlecocks flying! The Badminton Tournament at JÑĀNĀGNI is a fast-paced, action-packed competition that will put your skills to the test. Whether you're a seasoned pro or just looking to have fun, this tournament is the perfect opportunity to showcase your talent and compete against the best.`,
+    eventDetail: ["Both Singles and doubles will be conducted separately and have separate winners", "This event will have all rounds as eliminator round and the result will be announced on same day"],
+    rulebook: null,
+    coordinator: ["Mallikaarjuna (9133954353)", "Mayank Kumar "]
+  },
+  {
+    id: "chess",
+    name: "Battle of the Boards",
+    alias: "Chess Competition",
+    image: image14,
+    aboutEvent: `Ready to put your strategic skills to the test? The Chess Tournament at JÑĀNĀGNI is the ultimate battleground for thinkers, strategists, and checkmate experts. Whether you’re a seasoned chess master or a beginner looking to sharpen your skills, this tournament is your chance to showcase your talent and outwit your opponents on the board.`,
+    eventDetail: ["This event will have all rounds as eliminator round and the result will be announced on same day"],
+    rulebook: null,
+    coordinator: ["Harsh Modi (7742397107)", "Mayur Tanwar"]
+  },
+  {
+    id: "arm-wrestling",
+    name: "The Power Grip",
+    alias: "Arm Wrestling",
+    image: image17,
+    aboutEvent: `Get ready to test your strength and willpower at the Arm Wrestling Championship of JÑĀNĀGNI! This high-intensity competition will push you to your limits as you face off against other competitors in a battle of pure strength, technique, and determination.`,
+    eventDetail: ["This event will have all rounds as eliminator round and the result will be announced on same day"],
+    rulebook: null,
+    coordinator: ["Siddharth Gautam (9758122902)", "Aswini Kumar Dhar "]
+  },
+  {
+    id: "pushup",
+    name: "Push-Up Challenge",
+    alias: "Push-Ups Competition",
+    image: image18,
+    aboutEvent: `How many push-ups can you do? Prove your strength, endurance, and determination at the Push-ups Competition during JÑĀNĀGNI. Whether you're a fitness fanatic or just looking to challenge yourself, this event is your chance to show how many reps you can power through in a set time.`,
+    eventDetail: ["This event will have only one round and the result will be announced on same day"],
+    rulebook: null,
+    coordinator: ["Saikat Majumder (6289748489)", "Kartik Yadav (7015040115)"]
   },
 
 ]
