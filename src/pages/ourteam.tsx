@@ -1,6 +1,6 @@
 import React from 'react'
 import { profile, romit, rahul, archit, vivek, sourabh, sudhanshu, bikash, ashwani, ujjwal, supriya, ayush, gaurav,
-    abhishek, aman, anand, bhola, mohit, rc, rk, subhanshu
+    abhishek, aman, anand, bhola, mohit, rc, rk, subhanshu, soumik, sagar, saikat
  } from '../images/team'
 import Image, { StaticImageData } from 'next/image'
 import { twitter, linkedin, github } from '../images/icons';
@@ -64,12 +64,12 @@ const eventTeam = [
     },
     {
         name: 'Saikat Majumder',
-        image: profile,
+        image: saikat,
         year: "CSE, 3rd Year",
     },
     {
         name: 'Sagar Majumder',
-        image: profile,
+        image: sagar,
         year: "CSE, 3rd Year",
     },
     {
@@ -114,7 +114,7 @@ const eventTeam = [
     },
     {
         name: 'Soumik R. Das',
-        image: profile,
+        image: soumik,
         year: "CSE, 3rd Year",
     },
 
