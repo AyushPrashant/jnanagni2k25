@@ -1,6 +1,7 @@
 import React from 'react'
 import { profile, romit, rahul, archit, vivek, sourabh, sudhanshu, bikash, ashwani, ujjwal, supriya, ayush, gaurav,
-    abhishek, aman, anand, bhola, mohit, rc, rk, subhanshu, soumik, sagar, saikat
+    abhishek, aman, anand, bhola, mohit, rc, rk, subhanshu, soumik, sagar, saikat,
+    denison
  } from '../images/team'
 import Image, { StaticImageData } from 'next/image'
 import { twitter, linkedin, github } from '../images/icons';
@@ -131,6 +132,11 @@ const promoTeam = [
         name: 'Navin Joshi',
         image: profile,
         year: "ME, 3rd Year",
+    },
+    {
+        name: 'Denison Shinglai',
+        image: denison,
+        year: "CSE, 3rd Year",
     },
 ]
 
